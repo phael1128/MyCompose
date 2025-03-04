@@ -70,8 +70,7 @@
     }
 
 ### Surface
-      // Surface : 머테리얼 디자인 원칙을 따르는 UI Container
-      // 기본적으로 머테리얼에서 제공하는 배경색, 그림자, 모양 등등을 설정하기 위해 사용
+      // Surface : Compose UI의 Container로써 배경색, 그림자, 모양 등등을 설정하기 위해 사용
 
       /**
       * padding의 개념
