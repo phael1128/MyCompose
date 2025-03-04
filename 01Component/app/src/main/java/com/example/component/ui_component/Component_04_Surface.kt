@@ -14,8 +14,7 @@ import androidx.compose.ui.unit.dp
 
 @Composable
 fun ComposeSurface() {
-    // Android Jetpack Compose의 Surface는 Material 디자인 원칙을 따르는 컨테이너 역할을 하는 컴포저블(Composable) 함수입니다.
-    // 기본적으로 배경색, 그림자, 모양(Shape) 등을 설정할 수 있는 요소
+    // Android Jetpack Compose의 Surface는 Compose UI의 Container로써 배경색, 그림자, 모양 등등을 설정하기 위해 사용
     // backgroundColor, Shape, evelvation(그림자 설정), 터치 피드백 등등 사용가능
 
     // 기존 Text에 margin을 넣고 싶다면 setPadding으로 해결이 가능했다.
