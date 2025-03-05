@@ -1,4 +1,4 @@
-package com.example.component.ui_component
+package com.example.component.ui.ui_component
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Row

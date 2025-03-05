@@ -1,4 +1,4 @@
-package com.example.component.ui_component
+package com.example.component.ui.ui_component
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement

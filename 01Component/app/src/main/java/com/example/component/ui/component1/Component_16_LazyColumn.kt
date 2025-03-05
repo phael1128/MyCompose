@@ -1,4 +1,4 @@
-package com.example.component.ui_component
+package com.example.component.ui.ui_component
 
 import androidx.annotation.DrawableRes
 import androidx.compose.foundation.Image

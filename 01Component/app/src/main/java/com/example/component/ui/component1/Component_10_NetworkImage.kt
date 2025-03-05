@@ -1,4 +1,4 @@
-package com.example.component.ui_component
+package com.example.component.ui.ui_component
 
 import android.graphics.drawable.Drawable
 import android.util.Log
