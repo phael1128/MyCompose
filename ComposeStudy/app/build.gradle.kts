@@ -59,4 +59,7 @@ dependencies {
 
     // glide : coil도 있긴한데 Glide가 익숙해서 일단 Glide로 이미지 로드 해보기
     implementation ("com.github.bumptech.glide:compose:1.0.0-beta01")
+
+    // Compose ConstraintLayout
+    implementation ("androidx.constraintlayout:constraintlayout-compose:1.0.1")
 }
