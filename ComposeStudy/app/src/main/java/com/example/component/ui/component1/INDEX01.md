@@ -454,7 +454,7 @@
           }
       }
 
-### TopAppBar
+### SlopAPI
       @Composable
       fun ComposeSlot() {
           // SlotAPI란?
