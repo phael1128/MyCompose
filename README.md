@@ -19,9 +19,9 @@
 
 2. 기본적인 Compose UI 외 다른 UI들 정리본 [링크](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/ui/component2/INDEX02.md)
 - [x] : ConstraintLayout
-- [ ] : Canvas
-- [ ] : Dialog
-- [ ] : CustomDialog
+- [x] : Canvas
+- [x] : Dialog
+- [x] : CustomDialog
 - [ ] : DropDownMenu
 - [ ] : SnackBar
 - [ ] : BottomAppbar
