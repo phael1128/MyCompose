@@ -26,5 +26,5 @@
 - [x] : SnackBar
 - [x] : BottomAppbar
 - [x] : 상태와 상태 호이스팅
-- [ ] : Animation
+- [x] : Animation
 - [ ] : 부수효과
