@@ -25,6 +25,8 @@ fun ComposeSnackBar() {
 
     // rememberScaffoldState() : 머테리얼3 이전까지는 Scaffold에서 스낵바를 띄우기 위해 사용했던것으로 파악된다.
     // 하지만 이제는 사용하지 않고, 아래를 사용하면 되는 것 같다
+    // SnackBarHostState : 스낵바를 호출 및 컨트롤하는 상태 객체
+    // SnackBarHost : 스낵바를 띄우는 Composable
     val snackbarHostState = remember { SnackbarHostState() }
     Scaffold(
         snackbarHost = { SnackbarHost(snackbarHostState) },
