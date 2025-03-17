@@ -27,4 +27,4 @@
 - [x] : BottomAppbar
 - [x] : 상태와 상태 호이스팅
 - [x] : Animation
-- [ ] : 부수효과
+- [x] : 부수효과
