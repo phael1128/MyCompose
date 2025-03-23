@@ -31,3 +31,4 @@
 
 3. Compose 기타 [링크](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/ui/component3/INDEX03.md)
 - [x] : ViewModel
+- [x] : LiveData
