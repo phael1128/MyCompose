@@ -1,5 +1,5 @@
 # MyCompose
-1. Compose UI 종류 및 Scope(ViewGroup) 정리본 [링크](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/ui/component1/INDEX01.md)
+1. Compose UI 종류 및 Scope(ViewGroup) 정리본 [링크](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/presentation/ui/component1/INDEX01.md)
 - [x] : Text
 - [x] : Button
 - [x] : Modifier
@@ -17,7 +17,7 @@
 - [x] : Scaffold
 - [x] : LazyColumn
 
-2. 기본적인 Compose UI 외 다른 UI들 정리본 [링크](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/ui/component2/INDEX02.md)
+2. 기본적인 Compose UI 외 다른 UI들 정리본 [링크](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/presentation/ui/component2/INDEX02.md)
 - [x] : ConstraintLayout
 - [x] : Canvas
 - [x] : Dialog
@@ -29,6 +29,8 @@
 - [x] : Animation
 - [x] : 부수효과
 
-3. Compose 기타 [링크](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/ui/component3/INDEX03.md)
+3. Compose 기타 [링크](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/presentation/ui/component3/INDEX03.md)
 - [x] : ViewModel
 - [x] : LiveData
+- [x] : Navigation
+- [x] : ViewModel & DI
