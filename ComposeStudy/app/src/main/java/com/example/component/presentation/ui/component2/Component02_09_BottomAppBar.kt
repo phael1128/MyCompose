@@ -1,4 +1,4 @@
-package com.example.component.ui.component2
+package com.example.component.presentation.ui.component2
 
 import android.annotation.SuppressLint
 import androidx.compose.foundation.layout.Box

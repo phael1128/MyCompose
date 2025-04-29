@@ -1,4 +1,4 @@
-package com.example.component.practice
+package com.example.component.presentation.practice
 
 import android.annotation.SuppressLint
 import androidx.compose.animation.Crossfade
@@ -26,7 +26,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.component.ui.theme.ComponentTheme
+import com.example.component.presentation.ui.theme.ComponentTheme
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @Composable

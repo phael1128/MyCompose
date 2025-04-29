@@ -1,4 +1,4 @@
-package com.example.component.ui.component2
+package com.example.component.presentation.ui.component2
 
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background

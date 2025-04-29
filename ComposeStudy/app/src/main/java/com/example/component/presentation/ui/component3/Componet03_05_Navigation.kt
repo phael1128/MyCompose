@@ -1,4 +1,4 @@
-package com.example.component.ui.component3
+package com.example.component.presentation.ui.component3
 
 import android.annotation.SuppressLint
 import android.util.Log

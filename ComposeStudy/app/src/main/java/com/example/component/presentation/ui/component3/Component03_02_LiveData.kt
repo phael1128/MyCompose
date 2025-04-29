@@ -1,4 +1,4 @@
-package com.example.component.ui.component3
+package com.example.component.presentation.ui.component3
 
 import android.annotation.SuppressLint
 import androidx.compose.foundation.layout.Column
@@ -12,9 +12,9 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.component.practice.ToDo
-import com.example.component.practice.ToDoData
-import com.example.component.practice.ToDoInput
+import com.example.component.presentation.ui.practice.ToDo
+import com.example.component.presentation.ui.practice.ToDoData
+import com.example.component.presentation.ui.practice.ToDoInput
 
 class LiveDataViewModel: ViewModel() {
     private val _text = MutableLiveData("")
