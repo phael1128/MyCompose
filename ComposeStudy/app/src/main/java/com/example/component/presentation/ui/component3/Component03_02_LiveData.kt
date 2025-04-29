@@ -12,9 +12,9 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.component.presentation.ui.practice.ToDo
-import com.example.component.presentation.ui.practice.ToDoData
-import com.example.component.presentation.ui.practice.ToDoInput
+import com.example.component.presentation.practice.ToDo
+import com.example.component.presentation.practice.ToDoData
+import com.example.component.presentation.practice.ToDoInput
 
 class LiveDataViewModel: ViewModel() {
     private val _text = MutableLiveData("")

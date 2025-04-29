@@ -11,9 +11,9 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.component.presentation.ui.practice.ToDo
-import com.example.component.presentation.ui.practice.ToDoData
-import com.example.component.presentation.ui.practice.ToDoInput
+import com.example.component.presentation.practice.ToDo
+import com.example.component.presentation.practice.ToDoData
+import com.example.component.presentation.practice.ToDoInput
 
 class ToDoViewModel: ViewModel() {
 

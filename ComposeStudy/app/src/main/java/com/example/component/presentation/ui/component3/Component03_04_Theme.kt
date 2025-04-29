@@ -9,7 +9,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.component.ui.theme.ComponentTheme
+import com.example.component.presentation.ui.theme.ComponentTheme
 
 @Composable
 fun ComposeTheme() {
