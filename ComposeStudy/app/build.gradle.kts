@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.hilt)
     alias(libs.plugins.ksp)
 }
 
@@ -72,4 +73,8 @@ dependencies {
     //LiveData & Flow
     implementation("androidx.lifecycle:lifecycle-runtime-compose:2.8.7")
     implementation("androidx.compose.runtime:runtime-livedata:1.7.8")
+
+    // hilt
+    implementation(libs.hilt.android)
+    ksp(libs.hilt.compiler)
 }
