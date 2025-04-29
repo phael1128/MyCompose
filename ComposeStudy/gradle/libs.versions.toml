@@ -1,6 +1,6 @@
 [versions]
 agp = "8.7.3"
-kotlin = "2.0.0"
+kotlin = "2.1.20"
 coreKtx = "1.15.0"
 junit = "4.13.2"
 junitVersion = "1.2.1"
@@ -11,8 +11,9 @@ composeBom = "2024.04.01"
 navigationRuntimeKtx = "2.8.9"
 navigationCompose = "2.8.9"
 hiltVersion = "2.56.1"
+hiltCompose = "1.2.0"
 gsonVersion = "2.13.1"
-kspVersion = "2.0.0-1.0.21"
+kspVersion = "2.1.21-RC-2.0.0"
 retrofitVersion = "2.11.0"
 
 [libraries]
@@ -37,6 +38,7 @@ hilt-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", v
 gson = { group = "com.google.code.gson", name = "gson", version.ref = "gsonVersion" }
 retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofitVersion" }
 retrofit-converter-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofitVersion" }
+hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hiltCompose" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
