@@ -77,4 +77,11 @@ dependencies {
     // hilt
     implementation(libs.hilt.android)
     ksp(libs.hilt.compiler)
+
+    // gson
+    implementation(libs.gson)
+
+    //retrofit
+    implementation(libs.retrofit)
+    implementation(libs.retrofit.converter.gson)
 }
