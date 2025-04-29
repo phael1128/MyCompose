@@ -10,7 +10,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.component.presentation.ui.component3.viewmodel.ComposeViewModel
 
 @Composable
-fun ComposeViewModelComponent(
+fun ComposeDIViewModel(
     viewModel: ComposeViewModel = hiltViewModel()
 ) {
     LazyColumn {
@@ -32,5 +32,5 @@ fun ComposeViewModelComponent(
 @Preview
 @Composable
 fun ComposeViewModelComponentPreview() {
-    ComposeViewModelComponent()
+    ComposeDIViewModel()
 }
