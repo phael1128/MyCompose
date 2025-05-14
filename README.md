@@ -1,4 +1,4 @@
-# MyCompose
+# 1장 Compose Component
 1. Compose UI 종류 및 Scope(ViewGroup) 정리본 [링크](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/presentation/ui/component1/INDEX01.md)
 - [x] : Text
 - [x] : Button
@@ -34,3 +34,5 @@
 - [x] : LiveData
 - [x] : Navigation
 - [x] : ViewModel & DI
+
+# 2장 Copmose 원리 및 활용하기 [링크](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/presentation/ui/component4/index.md)
