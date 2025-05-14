@@ -1,38 +1,42 @@
 # 1장 Compose Component
-1. Compose UI 종류 및 Scope(ViewGroup) 정리본 [링크](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/presentation/ui/component1/INDEX01.md)
-- [x] : Text
-- [x] : Button
-- [x] : Modifier
-- [x] : Surface
-- [x] : Box
-- [x] : Row
-- [x] : Column
-- [x] : BoxWithConstraints
-- [x] : Image
-- [x] : GlideImage
-- [x] : Checkbox와 Recomposition 개념
-- [x] : TextField (EditText)
-- [x] : TopAppBar
-- [x] : SlopAPI
-- [x] : Scaffold
-- [x] : LazyColumn
+1. Compose UI 종류 및 Scope(ViewGroup) [정리본](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/presentation/ui/basic/component1/INDEX01.md)
+- [x] : [Text](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/presentation/ui/basic/component1/chap01/ComposeText.md)
+- [x] : [Button](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/presentation/ui/basic/component1/chap02/ComposeButton.md)
+- [x] : [Modifier](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/presentation/ui/basic/component1/chap03/ComposeModifier.md)
+- [x] : [Surface](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/presentation/ui/basic/component1/chap04/ComposeSurface.md)
+- [x] : [Box](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/presentation/ui/basic/component1/chap05/ComposeBox.md)
+- [x] : [Row](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/presentation/ui/basic/component1/chap06/ComposeRow.md)
+- [x] : [Column](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/presentation/ui/basic/component1/chap07/ComposeColumn.md)
+- [x] : [BoxWithConstraints](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/presentation/ui/basic/component1/chap08/ComposeBoxWithConstrains.md)
+- [x] : [Image](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/presentation/ui/basic/component1/chap09/ComposeImage.md)
+- [x] : [GlideImage](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/presentation/ui/basic/component1/chap10/ComposeNetworkImage.md)
+- [x] : [Checkbox와 Recomposition 개념](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/presentation/ui/basic/component1/chap11/ComposeCheckBox.md)
+- [x] : [TextField (EditText)](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/presentation/ui/basic/component1/chap12/ComposeTextField.md)
+- [x] : [TopAppBar](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/presentation/ui/basic/component1/chap13/ComposeTopAppBar.md)
+- [x] : [SlopAPI](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/presentation/ui/basic/component1/chap14/ComposeSlotAPI.md)
+- [x] : [Scaffold](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/presentation/ui/basic/component1/chap15/ComposeScaffold.md)
+- [x] : [LazyColumn](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/presentation/ui/basic/component1/chap16/ComposeLazyColumn.md)
 
-2. 기본적인 Compose UI 외 다른 UI들 정리본 [링크](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/presentation/ui/component2/INDEX02.md)
-- [x] : ConstraintLayout
-- [x] : Canvas
-- [x] : Dialog
-- [x] : CustomDialog
-- [x] : DropDownMenu
-- [x] : SnackBar
-- [x] : BottomAppbar
-- [x] : 상태와 상태 호이스팅
-- [x] : Animation
-- [x] : 부수효과
+2. 기본적인 Compose UI 외 다른 UI들 정리본 [링크](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/presentation/ui/basic/component2/INDEX02.md)
+- [x] : [ConstraintLayout](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/presentation/ui/basic/component2/chap01/ComposeConstraintLayout.md)
+- [x] : [ConstraintSet](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/presentation/ui/basic/component2/chap02/ComposeConstraintSet.md)
+- [x] : [ConstraintLayout Chain, Barrier](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/presentation/ui/basic/component2/chap03/ComposeConstraintChainBarrier.md)  
+- [x] : [Canvas](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/presentation/ui/basic/component2/chap04/ComposeCanvas.md)
+- [x] : [Dialog](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/presentation/ui/basic/component2/chap05/ComposeDialog.md)
+- [x] : [CustomDialog](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/presentation/ui/basic/component2/chap06/ComposeCustomDialog.md)
+- [x] : [DropDownMenu](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/presentation/ui/basic/component2/chap07/ComposeDropDownMenu.md)
+- [x] : [SnackBar](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/presentation/ui/basic/component2/chap08/Component02_08_SnackBar.kt)
+- [x] : [BottomAppbar](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/presentation/ui/basic/component2/chap09/ComposeBottomAppBar.md)
+- [x] : [상태와 상태 호이스팅](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/presentation/ui/basic/component2/chap10/ComposeStateHoisting.md)
+- [x] : [Animation1](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/presentation/ui/basic/component2/chap11/ComposeAnimation1.md)
+- [x] : [Animation2](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/presentation/ui/basic/component2/chap12/ComposeAnimation2.md) 
+- [x] : [부수효과](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/presentation/ui/basic/component2/chap13/ComposeEffect.md)
 
-3. Compose 기타 [링크](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/presentation/ui/component3/INDEX03.md)
-- [x] : ViewModel
-- [x] : LiveData
-- [x] : Navigation
-- [x] : ViewModel & DI
+3. Compose 기타 [링크](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/presentation/ui/basic/component3/INDEX03.md)
+- [x] : [ViewModel](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/presentation/ui/basic/component3/chap01/ComposeViewModel.md)
+- [x] : [LiveData](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/presentation/ui/basic/component3/chap02/ComposeLiveData.md)
+- [x] : [Navigation](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/presentation/ui/basic/component3/chap05/ComposeNavigation.md)
+- [x] : [ViewModel & DI](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/presentation/ui/basic/component3/chap06/ComposeDI%26ViewModel.md)
 
-# 2장 Copmose 원리 및 활용하기 [링크](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/presentation/ui/component4/index.md)
+# 2장 Copmose 원리 및 활용하기
+- [x] : [Compose 원리](https://github.com/phael1128/MyCompose/blob/main/ComposeStudy/app/src/main/java/com/example/component/presentation/ui/useful/component4/index.md)
