@@ -85,4 +85,10 @@ dependencies {
     //retrofit
     implementation(libs.retrofit)
     implementation(libs.retrofit.converter.gson)
+
+    // paging
+    implementation(libs.paging.compose)
+
+    // coil
+    implementation(libs.coil.compose)
 }

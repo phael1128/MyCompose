@@ -1,4 +1,4 @@
-package com.example.component.presentation.ui.basic.component3.viewmodel
+package com.example.component.presentation.ui.basic.component3.chap06.viewmodel
 
 import android.util.Log
 import androidx.compose.runtime.mutableStateListOf

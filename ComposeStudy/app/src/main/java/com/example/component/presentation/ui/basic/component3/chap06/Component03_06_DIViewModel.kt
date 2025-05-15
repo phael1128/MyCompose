@@ -7,7 +7,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.example.component.presentation.ui.basic.component3.viewmodel.ComposeViewModel
+import com.example.component.presentation.ui.basic.component3.chap06.viewmodel.ComposeViewModel
 
 @Composable
 fun ComposeDIViewModel(
