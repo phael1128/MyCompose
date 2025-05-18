@@ -1,4 +1,4 @@
-package com.example.component.presentation.ui.useful.component4.model
+package com.example.component.presentation.ui.useful.model
 
 import androidx.compose.runtime.Immutable
 import androidx.compose.runtime.mutableStateListOf

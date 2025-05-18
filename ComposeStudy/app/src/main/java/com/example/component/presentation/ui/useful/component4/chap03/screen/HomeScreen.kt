@@ -1,4 +1,4 @@
-package com.example.component.presentation.ui.useful.component4.chap02.screen
+package com.example.component.presentation.ui.useful.component4.chap03.screen
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -20,6 +20,7 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.key
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.snapshots.SnapshotStateList
@@ -51,7 +52,9 @@ fun HomeScreen(homeState: HomeState) {
 }
 
 @Composable
-fun AddMemo(memoList: SnapshotStateList<Memo>) {
+fun AddMemo(
+    memoList: SnapshotStateList<Memo> // list인데 내부에 값이 변경되면 자동으로 Recomposition 해주는 list
+) {
     val inputValue = remember { mutableStateOf("") }
 
     Row(
@@ -96,6 +99,7 @@ fun ColumnScope.MemoList(
         items(
             count = memoList.size,
             key = { index ->
+                // 키를 지정해줌으로써, 전체 Recomposition이 이루어지는 것이 아닌, 가장 맨 위의 Compose만 Recomposition이 된다.??
                 memoList[index].id
             }
         ) { index ->
@@ -109,8 +113,10 @@ fun ColumnScope.MemoList(
                     )
                     .fillMaxWidth()
                     .clickable {
-                        onClickAction(memoList[index].id)
-                    }
+                        onClickAction(
+                            memoList[index].id
+                        )
+                    },
             ) {
                 Text(
                     text = memoList[index].text,
