@@ -1,6 +1,7 @@
 package com.example.component.presentation.ui.basic.component3.chap08.viewmodel
 
 import android.util.Log
+import androidx.compose.animation.fadeOut
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
@@ -20,6 +21,7 @@ class PokemonViewModel @Inject constructor(
     private val pokeAPI: PokemonService
 ) : ViewModel() {
 
+    // ViewModel Scope에 맞춰서 캐시로 저장
     val pokemonList: Flow<PagingData<Response.Result>> = getPokemons().cachedIn(viewModelScope)
     var pokemonResult by mutableStateOf(
         PokemonResponse(
@@ -47,15 +49,13 @@ class PokemonViewModel @Inject constructor(
                         } else {
                             pokeAPI.getPokemons()
                         }
-                        // 단계 2: `offset=20&limit=20` 형태의 주소에서
-                        // `prevKey`와 `nextKey`를 만들어 전달하자.
                         return LoadResult.Page(
                             data = pokemons.results,
-                            prevKey = null,
-                            nextKey = null
+                            prevKey = pokemons.previous?.substringAfter("offset=")?.substringBefore("&")?.toInt(),
+                            nextKey = pokemons.next?.substringAfter("offset=")?.substringBefore("&")?.toInt()
                         )
                     } catch (e: Exception) {
-                        Log.e("EEE", "error: $e")
+                        Log.e("Phael", "error: $e")
                         e.printStackTrace()
                         return LoadResult.Error(e)
                     }

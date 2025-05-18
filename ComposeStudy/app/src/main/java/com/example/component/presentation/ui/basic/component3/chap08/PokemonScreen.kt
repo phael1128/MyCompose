@@ -1,5 +1,6 @@
 package com.example.component.presentation.ui.basic.component3.chap08
 
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -10,17 +11,26 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.draw.alpha
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavHostController
+import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import androidx.navigation.navArgument
+import androidx.paging.LoadState
 import androidx.paging.compose.collectAsLazyPagingItems
 import coil.compose.AsyncImage
 import com.example.component.presentation.ui.basic.component3.chap08.viewmodel.PokemonViewModel
@@ -59,46 +69,61 @@ fun DetailScreen(
     }
 }
 
-// 단계 1: viewModel을 제대로 설정하자. `hiltViewModel()`를 사용한다.
 @Composable
 fun MainScreen(
     onPokemonClick: (String) -> Unit,
     viewModel: PokemonViewModel = hiltViewModel()
 ) {
     val response = viewModel.pokemonList.collectAsLazyPagingItems()
-    LazyColumn {
-        items(
-            response.itemCount,
-            key = { index ->
-                response[index]?.url ?: index
-            } // key는 nullable 대응
-        ) { index ->
-            val item = response[index]
-            item?.let {
-                Card(
-                    elevation = CardDefaults.elevatedCardElevation(defaultElevation = 8.dp),
-                    modifier = Modifier
-                        .padding(8.dp)
-                        .fillMaxWidth()
-                ) {
-                    Row(
-                        verticalAlignment = Alignment.CenterVertically,
-                        modifier = Modifier.padding(8.dp)
+    var isLoading by remember { mutableStateOf(false) }
+
+    LaunchedEffect(response.loadState) {
+        isLoading = when {
+            response.loadState.refresh is LoadState.Loading -> true
+            response.loadState.append is LoadState.Loading -> true
+            else -> false
+        }
+    }
+
+    Box {
+        if (isLoading) {
+            CircularProgressIndicator(modifier = Modifier.align(Alignment.Center))
+        }
+
+        LazyColumn {
+            items(
+                response.itemCount,
+                key = { index ->
+                    response[index]?.url ?: index
+                } // key는 nullable 대응
+            ) { index ->
+                val item = response[index]
+                item?.let {
+                    Card(
+                        elevation = CardDefaults.elevatedCardElevation(defaultElevation = 8.dp),
+                        modifier = Modifier
+                            .padding(8.dp)
+                            .fillMaxWidth()
                     ) {
-                        Column {
-                            Text("포케몬: ${it.name}")
-                            Text(
-                                text = it.url,
-                                Modifier.alpha(0.4f)
-                            )
-                        }
-                        Spacer(modifier = Modifier.size(16.dp))
-                        Button(
-                            onClick = {
-                                onPokemonClick(it.url)
-                            }
+                        Row(
+                            verticalAlignment = Alignment.CenterVertically,
+                            modifier = Modifier.padding(8.dp)
                         ) {
-                            Text("보기")
+                            Column {
+                                Text("포케몬: ${it.name}")
+                                Text(
+                                    text = it.url,
+                                    Modifier.alpha(0.4f)
+                                )
+                            }
+                            Spacer(modifier = Modifier.size(16.dp))
+                            Button(
+                                onClick = {
+                                    onPokemonClick(it.url)
+                                }
+                            ) {
+                                Text("보기")
+                            }
                         }
                     }
                 }
@@ -112,7 +137,6 @@ fun TopLevel(
     navController: NavHostController = rememberNavController(),
     modifier: Modifier = Modifier
 ) {
-
     NavHost(
         navController = navController,
         "Home",
@@ -129,18 +153,15 @@ fun TopLevel(
             )
         }
 
-        // 단계 3: arguments 파라미터를 설정하자.
-        // ```
-        // navArgument("pokemenId") {
-        // type = NavType.IntType
-        // }
-        // ```
-        // 리스트로 전달해야 한다.
         composable(
             "Detail/{pokemonId}",
+            arguments = listOf(
+                navArgument("pokemonId") {
+                    type = NavType.IntType
+                }
+            )
         ) {
-            // 단계 4: `pokemonId`를 `Int`값으로 가져오자. (`arguments?.getInt`를 이용)
-            val pokemonId = 0
+            val pokemonId = it.arguments?.getInt("pokemonId") as Int
             DetailScreen(
                 pokemonId = pokemonId,
                 onUpButtonClick = {

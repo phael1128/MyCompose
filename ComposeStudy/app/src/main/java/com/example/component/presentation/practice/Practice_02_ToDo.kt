@@ -26,7 +26,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.component.presentation.ui.theme.ComponentTheme
+import com.example.component.presentation.theme.MyComposeTheme
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @Composable
@@ -190,7 +190,7 @@ fun ToDo(
 @Preview(showBackground = true)
 @Composable
 fun ToDoPreview() {
-    ComponentTheme {
+    MyComposeTheme {
         ToDo(ToDoData(1, "nice", true))
     }
 }
@@ -198,7 +198,7 @@ fun ToDoPreview() {
 @Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {
-    ComponentTheme {
+    MyComposeTheme {
         TopLevel()
     }
 }
@@ -206,7 +206,7 @@ fun DefaultPreview() {
 @Preview(showBackground = true)
 @Composable
 fun ToDoInputPreview() {
-    ComponentTheme {
+    MyComposeTheme {
         ToDoInput("테스트", {}, {})
     }
 }
