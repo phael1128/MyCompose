@@ -13,6 +13,7 @@ import androidx.compose.material3.Text
 import androidx.compose.ui.Modifier
 import androidx.core.view.WindowCompat
 import com.example.component.presentation.ui.basic.component3.chap08.PokemonActivity
+import com.example.component.presentation.ui.useful.component4.chap02.activity.HomeActivity
 import dagger.hilt.EntryPoint
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -38,6 +39,19 @@ class MainActivity : ComponentActivity() {
                     }
                 ) {
                     Text(text = "포켓몬 화면으로 가기")
+                }
+
+                Button(
+                    onClick = {
+                        startActivity(
+                            Intent(
+                                this@MainActivity,
+                                HomeActivity::class.java
+                            )
+                        )
+                    }
+                ) {
+                    Text(text = "메모 화면으로 가기")
                 }
             }
         }
